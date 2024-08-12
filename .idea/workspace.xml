@@ -4,18 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10f55703-4dc1-4a42-98af-37696d122391" name="Changes" comment="Feat: init project">
+    <list default="true" id="10f55703-4dc1-4a42-98af-37696d122391" name="Changes" comment="feat: database setup">
+      <change afterPath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/strategy_award_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/strategy_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/strategy_rule_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-app/src/test/java/angelo/wu/test/infrastructure/AwardDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/IAwardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/IStrategyAwardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/IStrategyDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/IStrategyRuleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/Award.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/Strategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/StrategyAward.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/StrategyRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/xfg-frame-archetype.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/xfg-frame-archetype.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/frame_case_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/award_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/package-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/strategy_award_mapper.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/StrategyRule.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
@@ -35,23 +66,71 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.dev-ops/docker-compose-environment.yml: Compose Deployment.executor": "Run",
+    "JUnit.AwardDaoTest.executor": "Run",
+    "JUnit.AwardDaoTest.test_queryAwardList.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.big-market [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "240806-orm",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/angelowu/Desktop/big-market/big-market-app/src/main/resources/mybatis/mapper",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora_aws"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Docker.dev-ops/docker-compose-environment.yml: Compose Deployment">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AwardDaoTest.test_queryAwardList">
+    <configuration name="AwardDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="big-market-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="angelo.wu.test.infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="angelo.wu.test.infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="angelo.wu.test.infrastructure.AwardDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AwardDaoTest.test_queryAwardList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="big-market-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="angelo.wu.test.infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="angelo.wu.test.infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="angelo.wu.test.infrastructure.AwardDaoTest" />
+      <option name="METHOD_NAME" value="test_queryAwardList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="big-market-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="angelo.wu.Application" />
@@ -74,6 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AwardDaoTest.test_queryAwardList" />
+        <item itemvalue="JUnit.AwardDaoTest" />
         <item itemvalue="Docker.dev-ops/docker-compose-environment.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -93,7 +174,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722447239240</updated>
-      <workItem from="1722447240260" duration="15111000" />
+      <workItem from="1722447240260" duration="34550000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: init project">
       <option name="closed" value="true" />
@@ -103,14 +184,34 @@
       <option name="project" value="LOCAL" />
       <updated>1722461707793</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: database setup">
+      <option name="closed" value="true" />
+      <created>1722967166821</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722967166821</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Feat: init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: init project" />
+    <MESSAGE value="feat: database setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: database setup" />
   </component>
 </project>

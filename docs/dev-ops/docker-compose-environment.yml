@@ -23,8 +23,8 @@ services:
       timeout: 10s
       retries: 10
       start_period: 15s
-    volumes_from:
-      - mysql-job-dbdata
+#    volumes_from:
+#      - mysql-job-dbdata
 
   # 自动加载数据
   mysql-job-dbdata:

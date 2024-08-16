@@ -5,23 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10f55703-4dc1-4a42-98af-37696d122391" name="Changes" comment="feat: database setup">
-      <change afterPath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/strategy_award_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/strategy_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/strategy_rule_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-app/src/test/java/angelo/wu/test/infrastructure/AwardDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/IAwardDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/IStrategyAwardDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/IStrategyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/IStrategyRuleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/Award.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/Strategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/StrategyAward.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/StrategyRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-app/src/main/java/angelo/wu/config/RedisClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-app/src/main/java/angelo/wu/config/RedisClientConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-app/src/test/java/angelo/wu/test/domain/StrategyArmoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-domain/src/main/java/angelo/wu/domain/strategy/model/entity/StrategyAwardEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-domain/src/main/java/angelo/wu/domain/strategy/repository/IStrategyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-domain/src/main/java/angelo/wu/domain/strategy/service/armory/IStrategyArmory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-domain/src/main/java/angelo/wu/domain/strategy/service/armory/StrategyArmory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/redis/IRedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/redis/RedissonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/repository/StrategyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops/redis/redis.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-app/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/big-market-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/frame_case_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/award_mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/strategy_award_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/strategy_award_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-app/src/test/java/angelo/wu/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-app/src/test/java/angelo/wu/test/ApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/IStrategyAwardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/dao/IStrategyAwardDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-types/src/main/java/angelo/wu/types/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-types/src/main/java/angelo/wu/types/common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +52,15 @@
     <setting file="file://$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper/strategy_award_mapper.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/big-market-infrastructure/src/main/java/angelo/wu/infrastructure/persistent/po/StrategyRule.java" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2k1Nh9ppg2wRNR3iSNi62OLi3Q7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -66,8 +70,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.dev-ops/docker-compose-environment.yml: Compose Deployment.executor": "Run",
+    "JUnit.ApiTest.test.executor": "Run",
     "JUnit.AwardDaoTest.executor": "Run",
     "JUnit.AwardDaoTest.test_queryAwardList.executor": "Run",
+    "JUnit.StrategyArmoryTest.test_getAssembleRandomVal.executor": "Run",
+    "JUnit.StrategyArmoryTest.test_strategyArmory.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.big-market [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -78,7 +85,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "240806-orm",
+    "git-widget-placeholder": "240812-strategy-armory",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/angelowu/Desktop/big-market/big-market-app/src/main/resources/mybatis/mapper",
     "node.js.detected.package.eslint": "true",
@@ -86,6 +93,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -99,18 +107,19 @@
       <recent name="$PROJECT_DIR$/big-market-app/src/main/resources/mybatis/mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AwardDaoTest.test_queryAwardList">
-    <configuration name="AwardDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.StrategyArmoryTest">
+    <configuration name="ApiTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="big-market-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="angelo.wu.test.infrastructure.*" />
+          <option name="PATTERN" value="angelo.wu.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="angelo.wu.test.infrastructure" />
-      <option name="MAIN_CLASS_NAME" value="angelo.wu.test.infrastructure.AwardDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="angelo.wu.test" />
+      <option name="MAIN_CLASS_NAME" value="angelo.wu.test.ApiTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,6 +140,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StrategyArmoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="big-market-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="angelo.wu.test.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="angelo.wu.test.domain" />
+      <option name="MAIN_CLASS_NAME" value="angelo.wu.test.domain.StrategyArmoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StrategyArmoryTest.test_getAssembleRandomVal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="big-market-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="angelo.wu.test.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="angelo.wu.test.domain" />
+      <option name="MAIN_CLASS_NAME" value="angelo.wu.test.domain.StrategyArmoryTest" />
+      <option name="METHOD_NAME" value="test_getAssembleRandomVal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StrategyArmoryTest.test_strategyArmory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="big-market-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="angelo.wu.test.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="angelo.wu.test.domain" />
+      <option name="MAIN_CLASS_NAME" value="angelo.wu.test.domain.StrategyArmoryTest" />
+      <option name="METHOD_NAME" value="test_strategyArmory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="big-market-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="angelo.wu.Application" />
@@ -139,23 +195,18 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
-      <method v="2" />
-    </configuration>
-    <configuration name="dev-ops/docker-compose-environment.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
-        </settings>
+        <settings />
       </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StrategyArmoryTest" />
+        <item itemvalue="JUnit.StrategyArmoryTest.test_getAssembleRandomVal" />
+        <item itemvalue="JUnit.StrategyArmoryTest.test_strategyArmory" />
+        <item itemvalue="JUnit.ApiTest.test" />
         <item itemvalue="JUnit.AwardDaoTest.test_queryAwardList" />
-        <item itemvalue="JUnit.AwardDaoTest" />
-        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
